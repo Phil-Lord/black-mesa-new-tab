@@ -1,0 +1,21 @@
+{
+  "name": "Black Mesa New Tab",
+  "description": "Overrides the new tab page with Black Mesa.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "black-mesa-new-tab.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["residue-processing.jpg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
