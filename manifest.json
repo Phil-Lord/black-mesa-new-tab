@@ -1,20 +1,25 @@
 {
   "name": "Black Mesa New Tab",
   "description": "Overrides the new tab page with Black Mesa.",
+  "author": "Phil Lord",
+  "homepage_url": "https://github.com/Phil-Lord/black-mesa-new-tab",
   "version": "0.1",
   "manifest_version": 3,
   "incognito": "split",
   "chrome_url_overrides": {
-    "newtab": "black-mesa-new-tab.html"
+    "newtab": "pages/black-mesa-new-tab.html"
   },
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "web_accessible_resources": [
     {
-      "resources": ["residue-processing.jpg"],
+      "resources": [
+        "images/residue-processing.jpg",
+        "styles/main.css"
+      ],
       "matches": ["<all_urls>"]
     }
   ]
