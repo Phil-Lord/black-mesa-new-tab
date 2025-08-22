@@ -17,8 +17,10 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "images/residue-processing.jpg",
-        "styles/main.css"
+        "images/*.jpg",
+        "images/*.webp",
+        "styles/*.css",
+        "scripts/*.js"
       ],
       "matches": ["<all_urls>"]
     }
