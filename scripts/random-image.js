@@ -1,4 +1,3 @@
-// Configuration
 const config = {
   imagesPath: "../images",
   imagesList: [
@@ -27,7 +26,6 @@ const config = {
   ],
 };
 
-// Helper functions
 const getRandomImage = () => {
   const index = Math.floor(Math.random() * config.imagesList.length);
   return config.imagesList[index];
@@ -53,9 +51,14 @@ const setupRandomImage = async () => {
 
     // Set the image only after it's loaded
     img.src = imagePath;
+
+    // Focus the omnibox (address/search bar)
+    // Small delay to ensure the page is fully loaded
+    setTimeout(() => {
+      chrome.tabs.update({ highlighted: true });
+    }, 100);
   } catch (error) {
     console.error("Failed to load image:", error);
-    // Optionally set a fallback image here
   }
 };
 

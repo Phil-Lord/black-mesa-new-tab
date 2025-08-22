@@ -6,6 +6,7 @@
   "version": "0.1",
   "manifest_version": 3,
   "incognito": "split",
+  "permissions": ["tabs"],
   "chrome_url_overrides": {
     "newtab": "pages/black-mesa-new-tab.html"
   },
